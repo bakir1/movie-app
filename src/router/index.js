@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Shows from '../views/Shows.vue'
 import MovieDetail from '../views/MovieDetail.vue'
-
+//route ili putanje za trazene stranice
 const routes = [
   {
     path: '/',

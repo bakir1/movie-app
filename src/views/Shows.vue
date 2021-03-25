@@ -2,6 +2,7 @@
 <template>
 
   <div class="movie-detail">
+    <!-- nista ne prikazuje -->
     <h2>{{movie.id}}</h2>
     <p>{{ movie.overview }}</p>
     <img :src="movie.poster_path" alt="Movie Poster" class="featured-img" />

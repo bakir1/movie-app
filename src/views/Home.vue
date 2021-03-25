@@ -1,20 +1,21 @@
  <template>
   <div class="home">
 
-
+<!-- na pocetnoj search input form -->
 <form @submit.prevent="SearchMovies" class="search-box">
   <input type="text" placeholder="Search" v-model="search" />
   <input type="submit" value="Search" />
 </form>
-
+<!-- lista za sve filmove -->
 <div class="movies-list">
-  <div class="movie" v-for="movie in movies" :key="movie.imdb_id">
-    <router-link :to="'/movie/' + movie.imdb_id" class="movie-link">
+  <div class="movie" v-for="movie in movies" :key="movie.id">
+    <router-link :to="'/movie/' + movie.id" class="movie-link">
     <div class="product-image">
       <img src="movie.Poster" alt="Movie Poster" />
       <div class="type"> {{ movie.Type }} </div>
     </div>
     <div class="detail">
+      <!-- prikaz godine filma -->
       <p class="y">{{ movie.Year }}</p>
       <h3>{{ movie.Title }}</h3>
     </div>

@@ -1,5 +1,6 @@
 <template>
 <div id="nav">
+  <!-- button za stranice na pocetnoj -->
     <router-link to="/">Home</router-link> |
     <router-link to="/movie">Movies</router-link> |
     <router-link to="/shows">Tv Shows</router-link>
